@@ -29,10 +29,9 @@ export const EducationSection = () => {
               </div>
 
               <div>
-                <h4 className="text-lg font-semibold">Trường THPT Chuyên Phan Bội Châu</h4>
-                <p className="text-sm text-muted-foreground">Ban Tự nhiên (2017 - 2020)</p>
+                <h4 className="text-lg font-semibold">Ngoại ngữ</h4>
                 <p className="text-sm mt-1">
-                  Thành viên đội tuyển Tin học tỉnh Nghệ An. Đạt giải Nhì học sinh giỏi Tin học cấp tỉnh.
+                  TOEIC: 650 – IELTS: 5.5
                 </p>
               </div>
             </div>
