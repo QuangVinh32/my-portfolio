@@ -53,7 +53,7 @@ export const ContactSection = () => {
                   <Mail className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div className="mt-2">
-                  <span className="font-medium"> Email: </span>
+                  <span className="font-medium">Email: </span>
                   <a
                     href="mailto:hello@gmail.com"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -67,7 +67,7 @@ export const ContactSection = () => {
                   <Phone className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div className="mt-2">
-                  <span className="font-medium"> Số điện thoại: </span>
+                  <span className="font-medium">Số điện thoại: </span>
                   <a
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -81,7 +81,7 @@ export const ContactSection = () => {
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div className="mt-2">
-                  <span className="font-medium"> Địa chỉ: </span>
+                  <span className="font-medium">Địa chỉ: </span>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
                     Tiến thủy, Quỳnh Lưu, Nghệ An
                   </a>
@@ -129,7 +129,7 @@ export const ContactSection = () => {
                   name="name"
                   required
                   className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                  placeholder="Lê Quang Vinh"
+                  placeholder="Lê Quang Vinh  "
                 />
               </div>
 

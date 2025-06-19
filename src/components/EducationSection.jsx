@@ -22,9 +22,10 @@ export const EducationSection = () => {
             <div className="space-y-6">
               <div>
                 <h4 className="text-lg font-semibold">Đại học Xây Dựng Hà Nội</h4>
-                <p className="text-sm text-muted-foreground">Kỹ thuật phần mềm (2020 - 2024)</p>
+                <p className="text-sm text-muted-foreground">Khoa công nghệ thông tin</p>
+                <p className="text-sm text-muted-foreground">Chuyên ngành kỹ thuật phần mềm (2020 - 2024)</p>
                 <p className="text-sm mt-1">
-                  GPA: 3.6/4.0 - Tập trung vào phát triển hệ thống backend, kiến trúc phần mềm, cơ sở dữ liệu và bảo mật ứng dụng web.
+                  Tập trung vào phát triển hệ thống backend, kiến trúc phần mềm, cơ sở dữ liệu và bảo mật ứng dụng web.
                 </p>
               </div>
 
