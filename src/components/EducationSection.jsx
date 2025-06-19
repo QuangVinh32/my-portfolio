@@ -21,7 +21,7 @@ export const EducationSection = () => {
 
             <div className="space-y-6">
               <div>
-                <h4 className="text-lg font-semibold">Đại Xây dựng Hà Nội</h4>
+                <h4 className="text-lg font-semibold">Đại học Xây Dựng Hà Nội</h4>
                 <p className="text-sm text-muted-foreground">Kỹ thuật phần mềm (2020 - 2024)</p>
                 <p className="text-sm mt-1">
                   GPA: 3.6/4.0 - Tập trung vào phát triển hệ thống backend, kiến trúc phần mềm, cơ sở dữ liệu và bảo mật ứng dụng web.
@@ -40,7 +40,7 @@ export const EducationSection = () => {
           {/* Thông tin khác (khóa học, chứng chỉ) */}
           <div className="bg-card p-8 rounded-lg shadow-xs space-y-6">
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
-              <School className="text-primary" />
+              <School className="text-primary mb-8 sm:mb-0" />
               Khóa học & Chứng chỉ
             </h3>
 
@@ -49,7 +49,7 @@ export const EducationSection = () => {
                 <h4 className="text-base font-medium">Java FullStack Developer - VTI</h4>
                 <p className="text-sm text-muted-foreground">2023 - 2024</p>
                 <p className="text-sm mt-1">
-                  Thành thạo Spring Boot, RESTful API, JWT, OAuth2, ReactJs, Docker, MySQL.
+                  Thành thạo Spring Boot, RESTful API, JWT, OAuth2, ReactJs, Tailwindcss, Docker, MySQL.
                 </p>
               </div>
 

@@ -22,15 +22,20 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-Tôi tạo ra những trải nghiệm web tuyệt vời với công nghệ hiện đại. Chuyên về phát triển front-end, tôi xây dựng những giao diện vừa đẹp vừa hữu dụng.
+            Tôi tạo ra những trải nghiệm web tuyệt vời với công nghệ hiện đại. Chuyên về phát triển front-end, tôi xây dựng những giao diện vừa đẹp vừa hữu dụng.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
-            <a href="#projects" className="cosmic-button">
-              {/* View My Work */}
+            <a
+              href="#projects"
+              className="cosmic-button transition-transform duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/50"
+            >
               Thông tin của tôi
             </a>
+
           </div>
+
+
         </div>
       </div>
 

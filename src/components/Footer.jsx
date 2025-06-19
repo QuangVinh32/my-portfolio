@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="py-8 px-6  from-primary/10 via-background to-primary/10 border-t mt-12 flex flex-col md:flex-row justify-between items-center gap-4 relative">
       <p className="text-sm text-muted-foreground tracking-wide">
-        &copy; {new Date().getFullYear()} <span className="font-semibold text-primary">Pedrotech.co</span>. All rights reserved.
+        &copy; {new Date().getFullYear()} <span className="font-semibold text-primary">Lê Quang Vinh</span>. All rights reserved.
       </p>
       <a
         href="#hero"
