@@ -16,7 +16,7 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              Với hơn 5 năm kinh nghiệm trong lĩnh vực phát triển web, tôi chuyên tạo ra các ứng dụng web có khả năng phản hồi, dễ truy cập và hiệu suất cao bằng các công nghệ hiện đại.
+              Với hơn 2 năm kinh nghiệm trong lĩnh vực phát triển web, tôi chuyên tạo ra các ứng dụng web có khả năng phản hồi, dễ truy cập và hiệu suất cao bằng các công nghệ hiện đại.
             </p>
 
             <p className="text-muted-foreground">
