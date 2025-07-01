@@ -112,6 +112,24 @@ export const StarBackground = () => {
         />
       )}
 
+      {isDarkMode && (
+        <div
+          className="aurora"
+          style={{
+            position: "absolute",
+            top: "0%",
+            left: "0%",
+            width: "100%",
+            height: "100%",
+            background: "radial-gradient(ellipse at 50% 0%, rgba(0,255,128,0.2), transparent 70%)",
+            mixBlendMode: "screen",
+            animation: "auroraWave 10s ease-in-out infinite",
+            zIndex: 0.5,
+            pointerEvents: "none",
+          }}
+        />
+      )}
+
 
 
       {stars.map((star) => (
