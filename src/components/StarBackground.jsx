@@ -10,20 +10,25 @@ export const StarBackground = () => {
 
 
   useEffect(() => {
-    generateStars();
-    generateMeteors();
-
     const checkDarkMode = () => {
-      setIsDarkMode(document.documentElement.classList.contains("dark"));
+      const isDark = document.documentElement.classList.contains("dark");
+      setIsDarkMode(isDark);
     };
 
     checkDarkMode();
 
-    const observer = new MutationObserver(checkDarkMode);
-    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    const observer = new MutationObserver(() => {
+      checkDarkMode();
+    });
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["class"],
+    });
 
     const handleResize = () => {
-      generateStars();
+      if (isDarkMode) {
+        generateStars();
+      }
     };
 
     window.addEventListener("resize", handleResize);
@@ -33,6 +38,18 @@ export const StarBackground = () => {
       observer.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    if (isDarkMode) {
+      generateStars();
+      generateMeteors();
+    } else {
+      // ✅ Clear stars & meteors khi chuyển về sáng
+      setStars([]);
+      setMeteors([]);
+    }
+  }, [isDarkMode]);
+
 
 
   const generateSingleStar = (id) => ({
@@ -130,41 +147,41 @@ export const StarBackground = () => {
         />
       )}
 
+      {isDarkMode &&
+        stars.map((star) => (
+          <div
+            key={star.id}
+            className="twinkle"
+            style={{
+              position: "absolute",
+              width: star.size + "px",
+              height: star.size + "px",
+              borderRadius: "50%",
+              backgroundColor: "#fff",
+              left: star.x + "%",
+              top: star.y + "%",
+              opacity: star.opacity,
+              animationDuration: star.twinkleDuration,
+            }}
+          />
+        ))}
 
+      {isDarkMode &&
+        meteors.map((meteor) => (
+          <div
+            key={meteor.id}
+            className="meteor animate-meteor"
+            style={{
+              width: meteor.size * 50 + "px",
+              height: meteor.size * 2 + "px",
+              left: meteor.x + "%",
+              top: meteor.y + "%",
+              animationDelay: meteor.delay,
+              animationDuration: meteor.animationDuration + "s",
+            }}
+          />
+        ))}
 
-      {stars.map((star) => (
-        <div
-          key={star.id}
-          className="twinkle"
-          style={{
-            position: "absolute",
-            width: star.size + "px",
-            height: star.size + "px",
-            borderRadius: "50%",
-            backgroundColor: "#fff",
-            left: star.x + "%",
-            top: star.y + "%",
-            opacity: star.opacity,
-            animationDuration: star.twinkleDuration,
-          }}
-        />
-      ))}
-
-
-      {meteors.map((meteor) => (
-        <div
-          key={meteor.id}
-          className="meteor animate-meteor"
-          style={{
-            width: meteor.size * 50 + "px",
-            height: meteor.size * 2 + "px",
-            left: meteor.x + "%",
-            top: meteor.y + "%",
-            animationDelay: meteor.delay,
-            animationDuration: meteor.animationDuration + "s",
-          }}
-        />
-      ))}
     </div>
   );
 };
