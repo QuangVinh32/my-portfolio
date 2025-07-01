@@ -96,12 +96,15 @@ export const StarBackground = () => {
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
 
       {isDarkMode ? (
-        // 🌙 Mặt Trăng
         <div
           className="moon"
           style={{
-            width: "50px",
-            height: "50px",
+            width: "8vw",  // Responsive theo chiều ngang
+            height: "8vw",
+            minWidth: "32px",
+            minHeight: "32px",
+            maxWidth: "50px",
+            maxHeight: "50px",
             borderRadius: "50%",
             background: "radial-gradient(circle at 30% 30%, #fff, #ccc)",
             position: "absolute",
@@ -112,12 +115,15 @@ export const StarBackground = () => {
           }}
         />
       ) : (
-        // ☀️ Mặt Trời
         <div
           className="sun"
           style={{
-            width: "50px",
-            height: "50px",
+            width: "8vw",
+            height: "8vw",
+            minWidth: "32px",
+            minHeight: "32px",
+            maxWidth: "50px",
+            maxHeight: "50px",
             borderRadius: "50%",
             background: "radial-gradient(circle at 30% 30%, #FFD700, #FFA500)",
             position: "absolute",
@@ -128,6 +134,7 @@ export const StarBackground = () => {
           }}
         />
       )}
+
 
       {isDarkMode && (
         <div
