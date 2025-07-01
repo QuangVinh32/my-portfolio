@@ -89,7 +89,7 @@ export const StarBackground = () => {
             background: "radial-gradient(circle at 30% 30%, #fff, #ccc)",
             position: "absolute",
             top: "10%",
-            left: "7%",
+            left: "8%",
             boxShadow: "0 0 40px rgba(255, 255, 200, 0.6)",
             zIndex: 1,
           }}
@@ -105,7 +105,7 @@ export const StarBackground = () => {
             background: "radial-gradient(circle at 30% 30%, #FFD700, #FFA500)",
             position: "absolute",
             top: "10%",
-            left: "7%",
+            left: "8%",
             boxShadow: "0 0 50px rgba(255, 200, 0, 0.7)",
             zIndex: 1,
           }}
