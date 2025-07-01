@@ -26,7 +26,7 @@ const projects = [
     description:
       "Full-featured e-commerce platform with user authentication and payment processing.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["React", "Spring", "Stripe"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -63,7 +63,7 @@ export const ProjectsSection = () => {
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag, index) => (
                     <span
-                      key={`${project.id}-${tag}-${index}`} // đảm bảo key là duy nhất
+                      key={`${project.id}-${tag}-${index}`}
                       className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
                     >
                       {tag}

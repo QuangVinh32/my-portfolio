@@ -6,10 +6,21 @@ import { useEffect, useState } from "react";
 export const StarBackground = () => {
   const [stars, setStars] = useState([]);
   const [meteors, setMeteors] = useState([]);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
 
   useEffect(() => {
     generateStars();
     generateMeteors();
+
+    const checkDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    };
+
+    checkDarkMode();
+
+    const observer = new MutationObserver(checkDarkMode);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
 
     const handleResize = () => {
       generateStars();
@@ -17,8 +28,21 @@ export const StarBackground = () => {
 
     window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      observer.disconnect();
+    };
   }, []);
+
+
+  const generateSingleStar = (id) => ({
+    id,
+    size: Math.random() * 3 + 1,
+    x: Math.random() * 100,
+    y: Math.random() * 100,
+    opacity: Math.random() * 0.5 + 0.5,
+    twinkleDuration: Math.random() * 4 + 2 + "s",
+  });
 
   const generateStars = () => {
     const numberOfStars = Math.floor(
@@ -28,19 +52,11 @@ export const StarBackground = () => {
     const newStars = [];
 
     for (let i = 0; i < numberOfStars; i++) {
-      newStars.push({
-        id: i,
-        size: Math.random() * 3 + 1,
-        x: Math.random() * 100,
-        y: Math.random() * 100,
-        opacity: Math.random() * 0.5 + 0.5,
-        animationDuration: Math.random() * 4 + 2,
-      });
+      newStars.push(generateSingleStar(i));
     }
 
     setStars(newStars);
   };
-
   const generateMeteors = () => {
     const numberOfMeteors = 4;
     const newMeteors = [];
@@ -61,20 +77,61 @@ export const StarBackground = () => {
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
+
+      {isDarkMode ? (
+        // 🌙 Mặt Trăng
+        <div
+          className="moon"
+          style={{
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle at 30% 30%, #fff, #ccc)",
+            position: "absolute",
+            top: "10%",
+            left: "7%",
+            boxShadow: "0 0 40px rgba(255, 255, 200, 0.6)",
+            zIndex: 1,
+          }}
+        />
+      ) : (
+        // ☀️ Mặt Trời
+        <div
+          className="sun"
+          style={{
+            width: "50px",
+            height: "50px",
+            borderRadius: "50%",
+            background: "radial-gradient(circle at 30% 30%, #FFD700, #FFA500)",
+            position: "absolute",
+            top: "10%",
+            left: "7%",
+            boxShadow: "0 0 50px rgba(255, 200, 0, 0.7)",
+            zIndex: 1,
+          }}
+        />
+      )}
+
+
+
       {stars.map((star) => (
         <div
           key={star.id}
-          className="star animate-pulse-subtle"
+          className="twinkle"
           style={{
+            position: "absolute",
             width: star.size + "px",
             height: star.size + "px",
+            borderRadius: "50%",
+            backgroundColor: "#fff",
             left: star.x + "%",
             top: star.y + "%",
             opacity: star.opacity,
-            animationDuration: star.animationDuration + "s",
+            animationDuration: star.twinkleDuration,
           }}
         />
       ))}
+
 
       {meteors.map((meteor) => (
         <div

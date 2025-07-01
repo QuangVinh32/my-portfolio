@@ -6,14 +6,14 @@ const skills = [
   // Frontend
   { name: "HTML/CSS", level: 95, category: "frontend" },
   { name: "JavaScript", level: 90, category: "frontend" },
-  { name: "React", level: 90, category: "frontend" },
+  { name: "ReactJs", level: 90, category: "frontend" },
   { name: "TypeScript", level: 85, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "Angular", level: 80, category: "frontend" },
 
   // Backend
-  { name: "Java", level: 80, category: "backend" },
-  { name: "Spring boot", level: 75, category: "backend" },
+  { name: "Java Core", level: 80, category: "backend" },
+  { name: "Spring Boot", level: 75, category: "backend" },
   { name: "MySQL", level: 70, category: "backend" },
   { name: "PostgreSQL", level: 65, category: "backend" },
   { name: "GraphQL", level: 60, category: "backend" },
