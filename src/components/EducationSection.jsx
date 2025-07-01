@@ -11,7 +11,7 @@ export const EducationSection = () => {
           Dưới đây là quá trình học tập của tôi qua các cấp bậc giáo dục cũng như các chương trình đào tạo chuyên ngành.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 ">
           {/* Thông tin học vấn */}
           <div className="space-y-8">
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2 mt-8">
@@ -39,7 +39,7 @@ export const EducationSection = () => {
           </div>
 
           {/* Thông tin khác (khóa học, chứng chỉ) */}
-          <div className="bg-card p-8 rounded-lg shadow-xs space-y-6">
+          <div className="bg-card p-6 rounded-2xl shadow-sm hover:shadow-lg transition-shadow space-y-6">
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <School className="text-primary mb-8 sm:mb-0" />
               Khóa học & Chứng chỉ
