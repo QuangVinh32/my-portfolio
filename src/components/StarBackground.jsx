@@ -95,46 +95,17 @@ export const StarBackground = () => {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
 
-      {isDarkMode ? (
-        <div
-          className="moon"
-          style={{
-            width: "8vw",  // Responsive theo chiều ngang
-            height: "8vw",
-            minWidth: "32px",
-            minHeight: "32px",
-            maxWidth: "50px",
-            maxHeight: "50px",
-            borderRadius: "50%",
-            background: "radial-gradient(circle at 30% 30%, #fff, #ccc)",
-            position: "absolute",
-            top: "10%",
-            left: "8%",
-            boxShadow: "0 0 40px rgba(255, 255, 200, 0.6)",
-            zIndex: 1,
-          }}
-        />
-      ) : (
-        <div
-          className="sun"
-          style={{
-            width: "8vw",
-            height: "8vw",
-            minWidth: "32px",
-            minHeight: "32px",
-            maxWidth: "50px",
-            maxHeight: "50px",
-            borderRadius: "50%",
-            background: "radial-gradient(circle at 30% 30%, #FFD700, #FFA500)",
-            position: "absolute",
-            top: "10%",
-            left: "8%",
-            boxShadow: "0 0 50px rgba(255, 200, 0, 0.7)",
-            zIndex: 1,
-          }}
-        />
-      )}
-
+      <div
+        className={`absolute rounded-full 
+          transition-all duration-300 ease-in-out
+          w-[8vw] h-[8vw] min-w-[32px] min-h-[32px] max-w-[50px] max-h-[50px]
+          top-[8vh] left-[8vw]
+          sm:top-[10vh] sm:left-[8vw]
+          ${isDarkMode
+            ? "bg-gradient-to-br from-white to-gray-300 shadow-[0_0_40px_rgba(255,255,200,0.6)]"
+            : "bg-gradient-to-br from-yellow-400 to-orange-400 shadow-[0_0_50px_rgba(255,200,0,0.7)]"}
+     `}
+      />
 
       {isDarkMode && (
         <div
