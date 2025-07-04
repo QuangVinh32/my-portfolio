@@ -83,7 +83,7 @@ export const ContactSection = () => {
                 <div className="mt-2">
                   <span className="font-medium">Địa chỉ: </span>
                   <a className="text-muted-foreground hover:text-primary transition-colors">
-                    ngõ 155 Cấu giấy, Hà Nội
+                    Ngõ 155 Cấu giấy, Hà Nội
                   </a>
                 </div>
               </div>
