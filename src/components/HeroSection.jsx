@@ -9,7 +9,7 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Xin chào, Tôi là</span>
+            <span className="opacity-0 animate-fade-in">Xin chào, Tôi là</span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
               Lê Quang
@@ -22,7 +22,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Tôi tạo ra những trải nghiệm web tuyệt vời với công nghệ hiện đại. Chuyên về phát triển front-end, tôi xây dựng những giao diện vừa đẹp vừa hữu dụng.
+            Tôi tạo ra những trải nghiệm web tuyệt vời với công nghệ hiện đại. Chuyên về phát triển front-end và back-end, tôi xây dựng những giao diện vừa đẹp vừa hữu dụng.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -34,7 +34,6 @@ export const HeroSection = () => {
             </a>
 
           </div>
-
 
         </div>
       </div>
