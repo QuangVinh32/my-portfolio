@@ -25,7 +25,7 @@ export const EducationSection = () => {
                 <p className="text-sm text-muted-foreground">Khoa công nghệ thông tin</p>
                 <p className="text-sm text-muted-foreground">Chuyên ngành kỹ thuật phần mềm (2020 - 2024)</p>
                 <p className="text-sm mt-1">
-                  Tập trung vào phát triển hệ thống backend, kiến trúc phần mềm, cơ sở dữ liệu và bảo mật ứng dụng web.
+                  Tập trung vào phát triển hệ thống backend, thiết kế giao diện, kiến trúc phần mềm, cơ sở dữ liệu và bảo mật ứng dụng web.
                 </p>
               </div>
 
