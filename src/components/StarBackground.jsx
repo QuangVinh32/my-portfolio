@@ -44,7 +44,6 @@ export const StarBackground = () => {
       generateStars();
       generateMeteors();
     } else {
-      // ✅ Clear stars & meteors khi chuyển về sáng
       setStars([]);
       setMeteors([]);
     }
@@ -99,8 +98,8 @@ export const StarBackground = () => {
         className={`absolute rounded-full 
           transition-all duration-300 ease-in-out
           w-[8vw] h-[8vw] min-w-[32px] min-h-[32px] max-w-[50px] max-h-[50px]
-          top-[8vh] left-[8vw]
-          sm:top-[10vh] sm:left-[8vw]
+          top-[10vh] left-[8vw]
+          sm:top-[12vh] sm:left-[8vw]
           ${isDarkMode
             ? "bg-gradient-to-br from-white to-gray-300 shadow-[0_0_40px_rgba(255,255,200,0.6)]"
             : "bg-gradient-to-br from-yellow-400 to-orange-400 shadow-[0_0_50px_rgba(255,200,0,0.7)]"}
@@ -109,7 +108,7 @@ export const StarBackground = () => {
 
       {isDarkMode && (
         <div
-          className="aurora"
+          className="aurora z-99"
           style={{
             position: "absolute",
             top: "0%",
@@ -119,7 +118,7 @@ export const StarBackground = () => {
             background: "radial-gradient(ellipse at 50% 0%, rgba(0,255,128,0.2), transparent 70%)",
             mixBlendMode: "screen",
             animation: "auroraWave 10s ease-in-out infinite",
-            zIndex: 0.5,
+            // zIndex: 0.5,
             pointerEvents: "none",
           }}
         />
