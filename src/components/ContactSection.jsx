@@ -89,24 +89,27 @@ export const ContactSection = () => {
               </div>
             </div>
 
-            <div className="pt-8">
-              <h4 className="font-medium mb-4"> Kết nối với tôi</h4>
-              <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
-                  <Linkedin />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitter />
-                </a>
-                <a href="#" target="_blank">
-                  <Instagram />
-                </a>
-                <a href="#" target="_blank">
-                  <Twitch />
-                </a>
+              <div className="pt-10">
+                <h4 className="font-medium mb-5 text-lg">Kết nối với tôi</h4>
+                <div className="flex justify-center gap-5">
+                  {[
+                    { icon: <Linkedin />, href: "#" },
+                    { icon: <Twitter />, href: "#" },
+                    { icon: <Instagram />, href: "#" },
+                    { icon: <Twitch />, href: "#" },
+                  ].map((item, index) => (
+                    <a
+                      key={index}
+                      href={item.href}
+                      target="_blank"
+                      className="p-3 rounded-full bg-muted text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300 transform hover:-translate-y-1"
+                    >
+                      {item.icon}
+                    </a>
+                  ))}
+                </div>
               </div>
-            </div>
-          </div>
+        </div>
 
           <div
             className="bg-card p-8 rounded-lg shadow-xs"
