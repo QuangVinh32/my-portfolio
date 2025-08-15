@@ -102,7 +102,7 @@ export const StarBackground = () => {
           sm:top-[12vh] sm:left-[8vw]
           ${isDarkMode
             ? "bg-gradient-to-br from-white to-gray-300 shadow-[0_0_40px_rgba(255,255,200,0.6)]"
-            : "bg-gradient-to-br from-yellow-400 to-orange-400 shadow-[0_0_50px_rgba(255,200,0,0.7)]"}
+            : ""}
      `}
       />
 
