@@ -23,8 +23,8 @@ export const AboutSection = () => {
               Tôi đam mê tạo ra các giải pháp tinh tế cho các vấn đề phức tạp và không ngừng học hỏi các công nghệ và kỹ thuật mới để luôn đi đầu trong bối cảnh web luôn thay đổi.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="#contact" className="cosmic-button">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center ">
+              <a href="#contact" className="cosmic-button hover:shadow-lg hover:shadow-indigo-500/50">
                 {" "}
                 Get In Touch
               </a>

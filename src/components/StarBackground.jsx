@@ -8,7 +8,6 @@ export const StarBackground = () => {
   const [meteors, setMeteors] = useState([]);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-
   useEffect(() => {
     const checkDarkMode = () => {
       const isDark = document.documentElement.classList.contains("dark");
@@ -48,8 +47,6 @@ export const StarBackground = () => {
       setMeteors([]);
     }
   }, [isDarkMode]);
-
-
 
   const generateSingleStar = (id) => ({
     id,
@@ -105,7 +102,6 @@ export const StarBackground = () => {
             : ""}
      `}
       />
-
       {isDarkMode && (
         <div
           className="aurora z-99"
@@ -118,7 +114,6 @@ export const StarBackground = () => {
             background: "radial-gradient(ellipse at 50% 0%, rgba(0,255,128,0.2), transparent 70%)",
             mixBlendMode: "screen",
             animation: "auroraWave 10s ease-in-out infinite",
-            // zIndex: 0.5,
             pointerEvents: "none",
           }}
         />

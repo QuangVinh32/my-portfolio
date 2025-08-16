@@ -33,9 +33,9 @@ export const Navbar = () => {
           "fixed w-full z-60 transition-all duration-300",
           isScrolled
             ? theme === "light"
-              ? "py-3 bg-white backdrop-blur-md shadow-xs"
-              : "py-3 bg-background backdrop-blur-md shadow-xs"
-            : "py-6"
+              ? "py-4 bg-white  shadow-xs"
+              : "py-4 bg-background  shadow-xs"
+            : "py-4"
         )}
       >
         <div className="container flex items-center justify-between">

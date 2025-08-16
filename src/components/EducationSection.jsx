@@ -12,7 +12,7 @@ export const EducationSection = () => {
     {
       title: "Ngoại ngữ",
       subtitle: "TOEIC: 650 – IELTS: 5.5",
-      time: "2021 - 2023",
+      time: "2023",
       desc: "",
     },
   ];
