@@ -121,7 +121,7 @@ export const ContactSection = () => {
             <form className="space-y-6">
               {/* Name */}
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
+                <label htmlFor="name" className=" text-sm font-medium mb-2 flex items-start">
                   Tên của bạn
                 </label>
                 <div className="relative">
@@ -139,7 +139,7 @@ export const ContactSection = () => {
 
               {/* Email */}
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
+                <label htmlFor="email" className="flex items-start text-sm font-medium mb-2">
                   Email của bạn
                 </label>
                 <div className="relative">
@@ -157,7 +157,7 @@ export const ContactSection = () => {
 
               {/* Message */}
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
+                <label htmlFor="message" className="flex items-start text-sm font-medium mb-2">
                   Tin nhắn của bạn
                 </label>
                 <div className="relative">
@@ -173,7 +173,6 @@ export const ContactSection = () => {
 
                 </div>
               </div>
-
               {/* Button */}
               <button
                 type="submit"
