@@ -18,8 +18,7 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            Tôi tạo ra những trải nghiệm web tuyệt vời với công nghệ hiện đại. Chuyên về phát triển front-end và back-end, tôi xây dựng những giao diện vừa đẹp vừa hữu dụng.
-          </p>
+Chào! Tôi tập trung vào việc xây dựng các sản phẩm số (Web/App/Game) toàn diện. Từ frontend tinh tế, thân thiện đến backend ổn định, hiệu suất cao, tôi sử dụng các công nghệ hiện đại để hiện thực hóa ý tưởng, đảm bảo sản phẩm cuối cùng không chỉ đẹp mà còn vận hành trơn tru và giải quyết đúng bài toán của người dùng.          </p>
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
             <a
               href="#projects"

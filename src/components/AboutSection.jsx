@@ -12,21 +12,21 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Nhà phát triển web đam mê & Người sáng tạo công nghệ
+              Nhà phát triển web/app đam mê & Người sáng tạo công nghệ
             </h3>
 
             <p className="text-muted-foreground">
-              Với hơn 2 năm kinh nghiệm trong lĩnh vực phát triển web, tôi chuyên tạo ra các ứng dụng web có khả năng phản hồi, dễ truy cập và hiệu suất cao bằng các công nghệ hiện đại.
+              Với hơn 3 năm kinh nghiệm trong lĩnh vực phát triển web(Spring + ReactJs)/app(Spring + Flutter) và game(TS), tôi chuyên tạo ra các ứng dụng web, app có khả năng phản hồi, dễ truy cập và hiệu suất cao bằng các công nghệ hiện đại.
             </p>
 
             <p className="text-muted-foreground">
-              Tôi đam mê tạo ra các giải pháp tinh tế cho các vấn đề phức tạp và không ngừng học hỏi các công nghệ và kỹ thuật mới để luôn đi đầu trong bối cảnh web luôn thay đổi.
+              Tôi đam mê tạo ra các giải pháp tinh tế cho các vấn đề phức tạp và không ngừng học hỏi các công nghệ và kỹ thuật mới để luôn đi đầu trong bối cảnh web/app luôn thay đổi.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center ">
               <a href="#contact" className="cosmic-button hover:shadow-lg hover:shadow-indigo-500/50">
                 {" "}
-                Get In Touch
+                Thông liên lạc
               </a>
 
               <a
@@ -45,9 +45,9 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg"> Web/App Development</h4>
                   <p className="text-muted-foreground">
-                  Tạo các trang web và ứng dụng web có khả năng phản hồi cao với các nền tảng hiện đại.
+                  Tạo các trang web/app và ứng dụng web/app có khả năng phản hồi cao với các nền tảng hiện đại.
                   </p>
                 </div>
               </div>
